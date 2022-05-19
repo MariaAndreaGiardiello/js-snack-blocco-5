@@ -55,6 +55,12 @@ const zucchine = [
     }
 ]
 
-// 2. creo costante per contenere il totale del peso
+// 2. creo variabile per contenere il totale del peso
+let totale = 0;
 // 3. creo ciclo for per continuare a sommare fino a che non comprende tutto il peso delle 10 zucchine
+for ( i = 0; i < zucchine.length; i++){
 // 4. faccio la somma del peso all'interno del ciclo
+    totale += zucchine[i].peso;
+}
+
+console.log(totale);
