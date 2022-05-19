@@ -64,5 +64,20 @@ const lunghezzaMin = [];
 let totale = 0;
 
 // 4. creo ciclo for per comprendere tutte le lunghezze indicate all'intenro dell'array di zucchine
+for ( let i = 0; i < zucchine.length; i++) {
 //5. all'intenro del ciclo for creo un ciclo if per dividere le due lunghezze
+    if (zucchine[i].lunghezza < 15) {
+        lunghezzaMin.push(zucchine[i]);
+    } else if (zucchine[i].lunghezza > 15) {
+        lunghezzaMag.push(zucchine[i]);
+    }
+}
+
+console.log(lunghezzaMag);
+console.log(lunghezzaMin);
+
 // 6. creo ciclo for per la somma
+for ( let i = 0; i < zucchine.length; i++) {
+   totale += zucchine[i].peso;
+}
+console.log(totale);
